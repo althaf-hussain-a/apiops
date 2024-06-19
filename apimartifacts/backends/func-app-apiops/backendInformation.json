@@ -1,0 +1,15 @@
+{
+  "properties": {
+    "credentials": {
+      "header": {
+        "x-functions-key": [
+          "{{func-app-apiops-key}}"
+        ]
+      }
+    },
+    "description": "func-app-apiops",
+    "protocol": "http",
+    "resourceId": "https://management.azure.com/subscriptions/43c46354-0a44-4af9-91f8-0c3b9013b7d3/resourceGroups/rg-apiops/providers/Microsoft.Web/sites/func-app-apiops",
+    "url": "https://func-app-apiops.azurewebsites.net/api"
+  }
+}

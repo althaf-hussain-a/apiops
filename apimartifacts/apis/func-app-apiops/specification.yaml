@@ -1,0 +1,42 @@
+openapi: 3.0.1
+info:
+  title: func-app-apiops
+  description: Import from "func-app-apiops" Function App
+  version: '1.0'
+servers:
+  - url: https://apim-apiops.azure-api.net/func-app-apiops
+paths:
+  /create_cluster:
+    post:
+      summary: create_cluster
+      operationId: create-cluster
+      responses:
+        '200':
+          description: 
+  /delete_cluster:
+    post:
+      summary: delete_cluster
+      operationId: delete-cluster
+      responses:
+        '200':
+          description: 
+  /get_clusters:
+    post:
+      summary: get_clusters
+      operationId: get-clusters
+      responses:
+        '200':
+          description: 
+components:
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      name: Ocp-Apim-Subscription-Key
+      in: header
+    apiKeyQuery:
+      type: apiKey
+      name: subscription-key
+      in: query
+security:
+  - apiKeyHeader: [ ]
+  - apiKeyQuery: [ ]

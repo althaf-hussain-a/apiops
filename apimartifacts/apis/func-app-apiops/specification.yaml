@@ -9,24 +9,27 @@ paths:
   /create_cluster:
     post:
       summary: create_cluster
+      description: create_cluster
       operationId: create-cluster
       responses:
         '200':
-          description: 
+          description: ''
   /delete_cluster:
     post:
       summary: delete_cluster
+      description: delete_cluster
       operationId: delete-cluster
       responses:
         '200':
-          description: 
+          description: ''
   /get_clusters:
     post:
       summary: get_clusters
+      description: get_clusters
       operationId: get-clusters
       responses:
         '200':
-          description: 
+          description: ''
 components:
   securitySchemes:
     apiKeyHeader:

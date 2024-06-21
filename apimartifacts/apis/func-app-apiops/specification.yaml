@@ -4,15 +4,8 @@ info:
   description: Import from "func-app-apiops" Function App
   version: '1.0'
 servers:
-  - url: https://apim-apiops.azure-api.net/aks
+  - url: https://apim-apiops.azure-api.net/func-app-apiops
 paths:
-  /create_cluster:
-    post:
-      summary: create_cluster
-      operationId: create-cluster
-      responses:
-        '200':
-          description: 
   /delete_cluster:
     post:
       summary: delete_cluster
@@ -24,6 +17,13 @@ paths:
     post:
       summary: get_clusters
       operationId: get-clusters
+      responses:
+        '200':
+          description: 
+  /create_cluster:
+    post:
+      summary: create_cluster
+      operationId: create-cluster
       responses:
         '200':
           description: 
